@@ -12,20 +12,34 @@
 		236DBAFF1F22E1F6003B51CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBAFD1F22E1F6003B51CE /* Main.storyboard */; };
 		236DBB011F22E1F6003B51CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB001F22E1F6003B51CE /* Assets.xcassets */; };
 		236DBB041F22E1F6003B51CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */; };
+		236DBB0D1F22E306003B51CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236DBAFB1F22E1F6003B51CE /* ViewController.swift */; };
+		236DBB0E1F22E306003B51CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236DBAF91F22E1F6003B51CE /* AppDelegate.swift */; };
+		236DBB111F22E306003B51CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */; };
+		236DBB121F22E306003B51CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB001F22E1F6003B51CE /* Assets.xcassets */; };
+		236DBB131F22E306003B51CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBAFD1F22E1F6003B51CE /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		236DBAF61F22E1F6003B51CE /* FlipulatorIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipulatorIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		236DBAF61F22E1F6003B51CE /* FlipulatorFreeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipulatorFreeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236DBAF91F22E1F6003B51CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FlipulatorIOS/AppDelegate.swift; sourceTree = "<group>"; };
 		236DBAFB1F22E1F6003B51CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = FlipulatorIOS/ViewController.swift; sourceTree = "<group>"; };
 		236DBAFE1F22E1F6003B51CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		236DBB001F22E1F6003B51CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FlipulatorIOS/Assets.xcassets; sourceTree = "<group>"; };
 		236DBB031F22E1F6003B51CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		236DBB051F22E1F6003B51CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = FlipulatorIOS/Info.plist; sourceTree = "<group>"; };
+		236DBB051F22E1F6003B51CE /* FlipulatorFreeIOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlipulatorFreeIOS.plist; path = FlipulatorIOS/FlipulatorFreeIOS.plist; sourceTree = "<group>"; };
+		236DBB171F22E306003B51CE /* FlipulatorPremiumIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipulatorPremiumIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		236DBB181F22E306003B51CE /* FlipulatorPremiumIOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlipulatorPremiumIOS.plist; path = /Users/dburgnerjr/FlipulatorIOS/FlipulatorIOS/FlipulatorPremiumIOS.plist; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		236DBAF31F22E1F6003B51CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		236DBB0F1F22E306003B51CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,7 +57,8 @@
 				236DBAFD1F22E1F6003B51CE /* Main.storyboard */,
 				236DBB001F22E1F6003B51CE /* Assets.xcassets */,
 				236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */,
-				236DBB051F22E1F6003B51CE /* Info.plist */,
+				236DBB051F22E1F6003B51CE /* FlipulatorFreeIOS.plist */,
+				236DBB181F22E306003B51CE /* FlipulatorPremiumIOS.plist */,
 				236DBAF71F22E1F6003B51CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,7 +66,8 @@
 		236DBAF71F22E1F6003B51CE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				236DBAF61F22E1F6003B51CE /* FlipulatorIOS.app */,
+				236DBAF61F22E1F6003B51CE /* FlipulatorFreeIOS.app */,
+				236DBB171F22E306003B51CE /* FlipulatorPremiumIOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,9 +75,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		236DBAF51F22E1F6003B51CE /* FlipulatorIOS */ = {
+		236DBAF51F22E1F6003B51CE /* FlipulatorFreeIOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 236DBB081F22E1F6003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorIOS" */;
+			buildConfigurationList = 236DBB081F22E1F6003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorFreeIOS" */;
 			buildPhases = (
 				236DBAF21F22E1F6003B51CE /* Sources */,
 				236DBAF31F22E1F6003B51CE /* Frameworks */,
@@ -71,9 +87,26 @@
 			);
 			dependencies = (
 			);
-			name = FlipulatorIOS;
+			name = FlipulatorFreeIOS;
 			productName = FlipulatorIOS;
-			productReference = 236DBAF61F22E1F6003B51CE /* FlipulatorIOS.app */;
+			productReference = 236DBAF61F22E1F6003B51CE /* FlipulatorFreeIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		236DBB0B1F22E306003B51CE /* FlipulatorPremiumIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 236DBB141F22E306003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorPremiumIOS" */;
+			buildPhases = (
+				236DBB0C1F22E306003B51CE /* Sources */,
+				236DBB0F1F22E306003B51CE /* Frameworks */,
+				236DBB101F22E306003B51CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipulatorPremiumIOS;
+			productName = FlipulatorIOS;
+			productReference = 236DBB171F22E306003B51CE /* FlipulatorPremiumIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,6 +124,9 @@
 						DevelopmentTeam = JEGM3HZ27P;
 						ProvisioningStyle = Automatic;
 					};
+					236DBB0B1F22E306003B51CE = {
+						DevelopmentTeam = JEGM3HZ27P;
+					};
 				};
 			};
 			buildConfigurationList = 236DBAF11F22E1F6003B51CE /* Build configuration list for PBXProject "FlipulatorIOS" */;
@@ -106,7 +142,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				236DBAF51F22E1F6003B51CE /* FlipulatorIOS */,
+				236DBAF51F22E1F6003B51CE /* FlipulatorFreeIOS */,
+				236DBB0B1F22E306003B51CE /* FlipulatorPremiumIOS */,
 			);
 		};
 /* End PBXProject section */
@@ -122,6 +159,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		236DBB101F22E306003B51CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236DBB111F22E306003B51CE /* LaunchScreen.storyboard in Resources */,
+				236DBB121F22E306003B51CE /* Assets.xcassets in Resources */,
+				236DBB131F22E306003B51CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -131,6 +178,15 @@
 			files = (
 				236DBAFC1F22E1F6003B51CE /* ViewController.swift in Sources */,
 				236DBAFA1F22E1F6003B51CE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		236DBB0C1F22E306003B51CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236DBB0D1F22E306003B51CE /* ViewController.swift in Sources */,
+				236DBB0E1F22E306003B51CE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +314,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
-				INFOPLIST_FILE = FlipulatorIOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorIOS/FlipulatorFreeIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorFreeIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -271,9 +327,35 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
-				INFOPLIST_FILE = FlipulatorIOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorIOS/FlipulatorFreeIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorFreeIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		236DBB151F22E306003B51CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JEGM3HZ27P;
+				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorPremiumIOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorPremiumIOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		236DBB161F22E306003B51CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JEGM3HZ27P;
+				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorPremiumIOS.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorPremiumIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -291,13 +373,22 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		236DBB081F22E1F6003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorIOS" */ = {
+		236DBB081F22E1F6003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorFreeIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				236DBB091F22E1F6003B51CE /* Debug */,
 				236DBB0A1F22E1F6003B51CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		236DBB141F22E306003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorPremiumIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				236DBB151F22E306003B51CE /* Debug */,
+				236DBB161F22E306003B51CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

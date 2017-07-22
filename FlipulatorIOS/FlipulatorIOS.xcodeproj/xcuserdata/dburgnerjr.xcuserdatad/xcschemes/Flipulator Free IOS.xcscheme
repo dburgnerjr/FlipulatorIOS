@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "236DBAF51F22E1F6003B51CE"
-               BuildableName = "FlipulatorIOS.app"
-               BlueprintName = "FlipulatorIOS"
+               BuildableName = "FlipulatorFreeIOS.app"
+               BlueprintName = "FlipulatorFreeIOS"
                ReferencedContainer = "container:FlipulatorIOS.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "236DBAF51F22E1F6003B51CE"
-            BuildableName = "FlipulatorIOS.app"
-            BlueprintName = "FlipulatorIOS"
+            BuildableName = "FlipulatorFreeIOS.app"
+            BlueprintName = "FlipulatorFreeIOS"
             ReferencedContainer = "container:FlipulatorIOS.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "236DBAF51F22E1F6003B51CE"
-            BuildableName = "FlipulatorIOS.app"
-            BlueprintName = "FlipulatorIOS"
+            BuildableName = "FlipulatorFreeIOS.app"
+            BlueprintName = "FlipulatorFreeIOS"
             ReferencedContainer = "container:FlipulatorIOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -75,8 +75,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "236DBAF51F22E1F6003B51CE"
-            BuildableName = "FlipulatorIOS.app"
-            BlueprintName = "FlipulatorIOS"
+            BuildableName = "FlipulatorFreeIOS.app"
+            BlueprintName = "FlipulatorFreeIOS"
             ReferencedContainer = "container:FlipulatorIOS.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -4,15 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FlipulatorIOS.xcscheme</key>
+		<key>Flipulator Free IOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Flipulator Premium IOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>236DBAF51F22E1F6003B51CE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>236DBB0B1F22E306003B51CE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
