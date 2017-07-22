@@ -316,7 +316,7 @@
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
 				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorIOS/FlipulatorFreeIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorFreeIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "dburgnerjr.Flipulator-Free";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -329,7 +329,7 @@
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
 				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorIOS/FlipulatorFreeIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorFreeIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "dburgnerjr.Flipulator-Free";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -342,7 +342,7 @@
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
 				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorPremiumIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorPremiumIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "dburgnerjr.Flipulator-Premium";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -355,7 +355,7 @@
 				DEVELOPMENT_TEAM = JEGM3HZ27P;
 				INFOPLIST_FILE = "$(SRCROOT)/FlipulatorPremiumIOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = dburgnerjr.FlipulatorPremiumIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = "dburgnerjr.Flipulator-Premium";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -380,6 +380,7 @@
 				236DBB0A1F22E1F6003B51CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		236DBB141F22E306003B51CE /* Build configuration list for PBXNativeTarget "FlipulatorPremiumIOS" */ = {
 			isa = XCConfigurationList;
