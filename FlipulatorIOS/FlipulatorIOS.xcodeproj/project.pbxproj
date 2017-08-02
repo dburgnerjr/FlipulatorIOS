@@ -17,6 +17,8 @@
 		236DBB111F22E306003B51CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */; };
 		236DBB121F22E306003B51CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236DBB001F22E1F6003B51CE /* Assets.xcassets */; };
 		236DBB131F22E306003B51CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBAFD1F22E1F6003B51CE /* Main.storyboard */; };
+		23E2E7281F251DB9009A18B6 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2E7271F251DB9009A18B6 /* AboutScreen.swift */; };
+		23E2E7291F251DB9009A18B6 /* AboutScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E2E7271F251DB9009A18B6 /* AboutScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,7 @@
 		236DBB051F22E1F6003B51CE /* FlipulatorFreeIOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlipulatorFreeIOS.plist; path = FlipulatorIOS/FlipulatorFreeIOS.plist; sourceTree = "<group>"; };
 		236DBB171F22E306003B51CE /* FlipulatorPremiumIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipulatorPremiumIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236DBB181F22E306003B51CE /* FlipulatorPremiumIOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = FlipulatorPremiumIOS.plist; path = /Users/dburgnerjr/FlipulatorIOS/FlipulatorIOS/FlipulatorPremiumIOS.plist; sourceTree = "<absolute>"; };
+		23E2E7271F251DB9009A18B6 /* AboutScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutScreen.swift; path = FlipulatorIOS/AboutScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +58,7 @@
 				236DBAF91F22E1F6003B51CE /* AppDelegate.swift */,
 				236DBAFB1F22E1F6003B51CE /* ViewController.swift */,
 				236DBAFD1F22E1F6003B51CE /* Main.storyboard */,
+				23E2E7271F251DB9009A18B6 /* AboutScreen.swift */,
 				236DBB001F22E1F6003B51CE /* Assets.xcassets */,
 				236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */,
 				236DBB051F22E1F6003B51CE /* FlipulatorFreeIOS.plist */,
@@ -178,6 +182,7 @@
 			files = (
 				236DBAFC1F22E1F6003B51CE /* ViewController.swift in Sources */,
 				236DBAFA1F22E1F6003B51CE /* AppDelegate.swift in Sources */,
+				23E2E7281F251DB9009A18B6 /* AboutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +192,7 @@
 			files = (
 				236DBB0D1F22E306003B51CE /* ViewController.swift in Sources */,
 				236DBB0E1F22E306003B51CE /* AppDelegate.swift in Sources */,
+				23E2E7291F251DB9009A18B6 /* AboutScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
