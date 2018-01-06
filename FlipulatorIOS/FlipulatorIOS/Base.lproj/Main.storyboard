@@ -38,7 +38,7 @@
                                 </state>
                                 <connections>
                                     <action selector="btnCalculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7hr-Sh-gtM"/>
-                                    <segue destination="4dh-hH-DIC" kind="presentation" modalTransitionStyle="crossDissolve" id="nFP-ka-zvd"/>
+                                    <segue destination="wJB-UC-znQ" kind="presentation" modalTransitionStyle="crossDissolve" id="2mT-gn-33T"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hFo-hu-h4e">
@@ -117,19 +117,27 @@
             <point key="canvasLocation" x="117.39130434782609" y="123.09782608695653"/>
         </scene>
         <!--Calculate Screen-->
-        <scene sceneID="Vt3-KS-HPg">
+        <scene sceneID="8E4-JT-Fbc">
             <objects>
-                <viewController id="4dh-hH-DIC" customClass="CalculateScreen" customModule="FlipulatorFreeIOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wJB-UC-znQ" customClass="CalculateScreen" customModule="FlipulatorFreeIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="OBn-lg-owD"/>
-                        <viewControllerLayoutGuide type="bottom" id="UWr-8L-m2r"/>
+                        <viewControllerLayoutGuide type="top" id="4ox-M6-GcT"/>
+                        <viewControllerLayoutGuide type="bottom" id="FPE-GN-eOc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8e0-eV-K6B">
+                    <view key="view" contentMode="scaleToFill" id="0To-6w-MA9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bU8-xO-Zbe">
-                                <rect key="frame" x="20" y="600" width="100" height="50"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5R-sK-jPO">
+                                <rect key="frame" x="20" y="20" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27986463904380798" green="0.61411696672439575" blue="0.18195223808288574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-q6-Wwv">
+                                <rect key="frame" x="20" y="614" width="117" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27986463900000003" green="0.61411696670000004" blue="0.1819522381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -137,23 +145,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="xVW-X2-IQX"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="7qf-Ah-8ME"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ooJ-wW-Jpz">
-                                <rect key="frame" x="294" y="600" width="100" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.27986463900000003" green="0.61411696670000004" blue="0.1819522381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Submit">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="submitButton:" destination="4dh-hH-DIC" eventType="touchUpInside" id="bS9-8n-VPj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bho-6j-Kxg">
-                                <rect key="frame" x="157" y="600" width="100" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rEK-Rw-raT">
+                                <rect key="frame" x="149" y="614" width="117" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.27986463900000003" green="0.61411696670000004" blue="0.1819522381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -161,19 +157,35 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="helpButton:" destination="4dh-hH-DIC" eventType="touchUpInside" id="7Kz-hN-a7L"/>
+                                    <action selector="btnAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T58-BV-WWI"/>
+                                    <action selector="btnHelp:" destination="wJB-UC-znQ" eventType="touchUpInside" id="9p7-6d-1mv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U95-f2-t0p">
+                                <rect key="frame" x="277" y="614" width="117" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.27986463900000003" green="0.61411696670000004" blue="0.1819522381" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnAbout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PmJ-2C-lJE"/>
+                                    <action selector="btnHelp:" destination="wJB-UC-znQ" eventType="touchUpInside" id="f0X-Hp-eEW"/>
+                                    <action selector="btnSubmit:" destination="wJB-UC-znQ" eventType="touchUpInside" id="yol-Il-dpm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="helpButton" destination="bho-6j-Kxg" id="tau-5p-D27"/>
+                        <outlet property="btnHelp" destination="rEK-Rw-raT" id="Iud-U1-7Kn"/>
+                        <outlet property="btnSubmit" destination="U95-f2-t0p" id="w64-wO-2zY"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TDn-NB-ML5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dX-K8-wtD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="863.768115942029" y="-580.43478260869574"/>
+            <point key="canvasLocation" x="869.56521739130437" y="-559.23913043478262"/>
         </scene>
         <!--AboutScreen-->
         <scene sceneID="DY6-no-s16">
@@ -245,6 +257,6 @@ Profitability is determined by using the flat fee and rehab type rehab models.</
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xVW-X2-IQX"/>
+        <segue reference="7qf-Ah-8ME"/>
     </inferredMetricsTieBreakers>
 </document>
