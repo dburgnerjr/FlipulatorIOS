@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		23052D1D20008C0A00FD3CE4 /* CalculateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23052D1C20008C0A00FD3CE4 /* CalculateScreen.swift */; };
 		23052D1E20008C0A00FD3CE4 /* CalculateScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23052D1C20008C0A00FD3CE4 /* CalculateScreen.swift */; };
+		23052D2020017B5700FD3CE4 /* ResultsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23052D1F20017B5700FD3CE4 /* ResultsScreen.swift */; };
+		23052D2120017B5700FD3CE4 /* ResultsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23052D1F20017B5700FD3CE4 /* ResultsScreen.swift */; };
 		236DBAFA1F22E1F6003B51CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236DBAF91F22E1F6003B51CE /* AppDelegate.swift */; };
 		236DBAFC1F22E1F6003B51CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236DBAFB1F22E1F6003B51CE /* ViewController.swift */; };
 		236DBAFF1F22E1F6003B51CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236DBAFD1F22E1F6003B51CE /* Main.storyboard */; };
@@ -25,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		23052D1C20008C0A00FD3CE4 /* CalculateScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CalculateScreen.swift; path = FlipulatorIOS/CalculateScreen.swift; sourceTree = "<group>"; };
+		23052D1F20017B5700FD3CE4 /* ResultsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResultsScreen.swift; path = FlipulatorIOS/ResultsScreen.swift; sourceTree = "<group>"; };
 		236DBAF61F22E1F6003B51CE /* FlipulatorFreeIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipulatorFreeIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		236DBAF91F22E1F6003B51CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FlipulatorIOS/AppDelegate.swift; sourceTree = "<group>"; };
 		236DBAFB1F22E1F6003B51CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = FlipulatorIOS/ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 				236DBAFB1F22E1F6003B51CE /* ViewController.swift */,
 				236DBAFD1F22E1F6003B51CE /* Main.storyboard */,
 				23052D1C20008C0A00FD3CE4 /* CalculateScreen.swift */,
+				23052D1F20017B5700FD3CE4 /* ResultsScreen.swift */,
 				23E2E7271F251DB9009A18B6 /* AboutScreen.swift */,
 				236DBB001F22E1F6003B51CE /* Assets.xcassets */,
 				236DBB021F22E1F6003B51CE /* LaunchScreen.storyboard */,
@@ -186,6 +190,7 @@
 			files = (
 				236DBAFC1F22E1F6003B51CE /* ViewController.swift in Sources */,
 				236DBAFA1F22E1F6003B51CE /* AppDelegate.swift in Sources */,
+				23052D2020017B5700FD3CE4 /* ResultsScreen.swift in Sources */,
 				23052D1D20008C0A00FD3CE4 /* CalculateScreen.swift in Sources */,
 				23E2E7281F251DB9009A18B6 /* AboutScreen.swift in Sources */,
 			);
@@ -197,6 +202,7 @@
 			files = (
 				236DBB0D1F22E306003B51CE /* ViewController.swift in Sources */,
 				236DBB0E1F22E306003B51CE /* AppDelegate.swift in Sources */,
+				23052D2120017B5700FD3CE4 /* ResultsScreen.swift in Sources */,
 				23052D1E20008C0A00FD3CE4 /* CalculateScreen.swift in Sources */,
 				23E2E7291F251DB9009A18B6 /* AboutScreen.swift in Sources */,
 			);
