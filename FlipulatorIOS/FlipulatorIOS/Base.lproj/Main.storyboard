@@ -306,14 +306,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ykK-kr-e0o">
-                                <rect key="frame" x="20" y="358" width="374" height="60"/>
+                                <rect key="frame" x="20" y="358" width="374" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Q9K-Zu-NSk">
-                                <rect key="frame" x="81" y="426" width="252" height="29"/>
+                                <rect key="frame" x="81" y="396" width="252" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <segments>
@@ -321,23 +321,19 @@
                                     <segment title="Rehab Type"/>
                                 </segments>
                                 <color key="tintColor" red="0.27986463904380798" green="0.61411696672439575" blue="0.18195223808288574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="budgetFlatRateRehabType:" destination="wJB-UC-znQ" eventType="valueChanged" id="BBk-VG-TBS"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rehab Budget:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96h-d9-9gN">
-                                <rect key="frame" x="20" y="482" width="181" height="30"/>
+                                <rect key="frame" x="20" y="447" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-rz-tWA">
-                                <rect key="frame" x="209" y="482" width="185" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lh-or-0v3">
-                                <rect key="frame" x="209" y="467" width="185" height="61"/>
+                                <rect key="frame" x="209" y="422" width="185" height="80"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEx-q6-Wwv">
@@ -379,12 +375,23 @@
                                     <action selector="btnSubmit:" destination="wJB-UC-znQ" eventType="touchUpInside" id="gBV-j8-lkC"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8IL-rz-tWA">
+                                <rect key="frame" x="209" y="447" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="btnHelp" destination="rEK-Rw-raT" id="Iud-U1-7Kn"/>
                         <outlet property="btnSubmit" destination="U95-f2-t0p" id="w64-wO-2zY"/>
+                        <outlet property="budgetFlatRateRehabTypeSC" destination="Q9K-Zu-NSk" id="nhd-xs-phP"/>
+                        <outlet property="lblRehabBudgetFRType" destination="96h-d9-9gN" id="D9a-SH-zl8"/>
+                        <outlet property="pickerView" destination="3Lh-or-0v3" id="c3a-9Q-OzH"/>
+                        <outlet property="txtRehabBudgetFlatRate" destination="8IL-rz-tWA" id="E9g-bx-1gy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0dX-K8-wtD" userLabel="First Responder" sceneMemberID="firstResponder"/>

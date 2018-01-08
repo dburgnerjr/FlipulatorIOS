@@ -8,20 +8,65 @@
 
 import UIKit
 
-class CalculateScreen: UIViewController {
+class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     @IBOutlet weak var btnHelp: UIButton!
     @IBOutlet weak var btnSubmit: UIButton!
-    var helpAlertController: UIAlertController!
+    @IBOutlet weak var pickerView: UIPickerView!
+    @IBOutlet weak var budgetFlatRateRehabTypeSC: UISegmentedControl!
+    @IBOutlet weak var lblRehabBudgetFRType: UILabel!
+    @IBOutlet weak var txtRehabBudgetFlatRate: UITextField!
     
+    var helpAlertController: UIAlertController!
+    var pickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblRehabBudgetFRType.text = "Rehab Budget:"
+        txtRehabBudgetFlatRate.isHidden = false
+        pickerView.isHidden = true
+        
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
+        
+        pickerData = ["Low", "Medium", "High", "Super-High", "Bulldozer"]
         
         let paid = Bundle.main.object(forInfoDictionaryKey: "Paid")
         if (paid != nil) {
         } else {
             return
         }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func budgetFlatRateRehabType(_ sender: Any) {
+        if (budgetFlatRateRehabTypeSC.selectedSegmentIndex == 0) {
+            lblRehabBudgetFRType.text = "Rehab Budget:"
+            txtRehabBudgetFlatRate.isHidden = false
+            pickerView.isHidden = true
+        } else {
+            lblRehabBudgetFRType.text = "Rehab Type:"
+            txtRehabBudgetFlatRate.isHidden = true
+            pickerView.isHidden = false
+        }
+    }
+    
+    // number of columns of data
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    // number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    // the data to return for the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
     }
     
     @IBAction func btnHelp(_ sender: Any) {
