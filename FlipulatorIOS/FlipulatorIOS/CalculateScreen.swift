@@ -8,13 +8,22 @@
 
 import UIKit
 
-class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     @IBOutlet weak var btnHelp: UIButton!
     @IBOutlet weak var btnSubmit: UIButton!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var budgetFlatRateRehabTypeSC: UISegmentedControl!
     @IBOutlet weak var lblRehabBudgetFRType: UILabel!
+    
+    @IBOutlet weak var txtAddress: UITextField!
+    @IBOutlet weak var txtCityStateZIPCode: UITextField!
+    @IBOutlet weak var txtSquareFootage: UITextField!
+    @IBOutlet weak var txtBedrooms: UITextField!
+    @IBOutlet weak var txtBathrooms: UITextField!
+    @IBOutlet weak var txtSalePrice: UITextField!
+    @IBOutlet weak var txtFMVARV: UITextField!
+    @IBOutlet weak var txtBudgetItems: UITextField!
     @IBOutlet weak var txtRehabBudgetFlatRate: UITextField!
     
     var helpAlertController: UIAlertController!
@@ -28,6 +37,8 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
+        self.txtBudgetItems.delegate = self
+        self.txtRehabBudgetFlatRate.delegate = self
         
         pickerData = ["Low", "Medium", "High", "Super-High", "Bulldozer"]
         
@@ -37,9 +48,27 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
             return
         }
     }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+    func checkField(sender: AnyObject) {
+        if ((txtAddress.text?.isEmpty)! || (txtCityStateZIPCode.text?.isEmpty)! ||
+            (txtSquareFootage.text?.isEmpty)! || (txtBedrooms.text?.isEmpty)! ||
+            (txtBathrooms.text?.isEmpty)! || (txtSalePrice.text?.isEmpty)! ||
+            (txtFMVARV.text?.isEmpty)! || (txtBudgetItems.text?.isEmpty)!) {
+            if ((txtRehabBudgetFlatRate.isHidden == false) && (txtFMVARV.text?.isEmpty)!) {
+                btnSubmit.isEnabled = false
+            }
+        } else {
+            btnSubmit.isEnabled = true
+        }
     }
     
     @IBAction func budgetFlatRateRehabType(_ sender: Any) {
@@ -70,11 +99,11 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
     
     @IBAction func btnHelp(_ sender: Any) {
-        helpAlertController = UIAlertController(title: "Help", message:
-            "Enter the address and square footage of the property, including the number of bedrooms and bathrooms, sale price, ARV, budget items and rehab budget. Rehab budget can be a flat rate or a rehab type. Rehab types are classified as:  Low ($15/sf, yard work and painting), Medium ($20/sf > 1500 sf or $25/sf < 1500 sf, Low + kitchen and bathrooms, High ($30/sf, Medium + new roof), Super-High ($40/sf, complete gut job), Bulldozer ($125/sf, demolition and rebuild).", preferredStyle: UIAlertControllerStyle.alert)
-        helpAlertController.addAction(UIAlertAction(title: "OK", style:
-            UIAlertActionStyle.default, handler: nil))
-        present(helpAlertController, animated: true, completion: nil)
+//        helpAlertController = UIAlertController(title: "Help", message:
+//            "Enter the address and square footage of the property, including the number of bedrooms and bathrooms, sale price, ARV, budget items and rehab budget. Rehab budget can be a flat rate or a rehab type. Rehab types are classified as:  Low ($15/sf, yard work and painting), Medium ($20/sf > 1500 sf or $25/sf < 1500 sf, Low + kitchen and bathrooms, High ($30/sf, Medium + new roof), Super-High ($40/sf, complete gut job), Bulldozer ($125/sf, demolition and rebuild).", preferredStyle: UIAlertControllerStyle.alert)
+//        helpAlertController.addAction(UIAlertAction(title: "OK", style:
+//            UIAlertActionStyle.default, handler: nil))
+//        present(helpAlertController, animated: true, completion: nil)
     }
     
     @IBAction func btnSubmit(_ sender: Any) {
