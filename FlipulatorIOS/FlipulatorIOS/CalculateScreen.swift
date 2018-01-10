@@ -23,7 +23,7 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     @IBOutlet weak var txtBathrooms: UITextField!
     @IBOutlet weak var txtSalePrice: UITextField!
     @IBOutlet weak var txtFMVARV: UITextField!
-    @IBOutlet weak var txtBudgetItems: UITextField!
+    @IBOutlet weak var txtBudgetItems: UITextView!
     @IBOutlet weak var txtRehabBudgetFlatRate: UITextField!
     
     var helpAlertController: UIAlertController!
@@ -34,10 +34,13 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         lblRehabBudgetFRType.text = "Rehab Budget:"
         txtRehabBudgetFlatRate.isHidden = false
         pickerView.isHidden = true
+ 
+        txtBudgetItems.layer.borderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor
+        txtBudgetItems.layer.borderWidth = 1.0
+        txtBudgetItems.layer.cornerRadius = 0
         
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
-        self.txtBudgetItems.delegate = self
         self.txtRehabBudgetFlatRate.delegate = self
         
         pickerData = ["Low", "Medium", "High", "Super-High", "Bulldozer"]
