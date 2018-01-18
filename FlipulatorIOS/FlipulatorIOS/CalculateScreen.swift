@@ -34,6 +34,7 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
         lblRehabBudgetFRType.text = "Rehab Budget:"
         txtRehabBudgetFlatRate.isHidden = false
         pickerView.isHidden = true
+        btnSubmit.isEnabled = false
  
         txtBudgetItems.layer.borderColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0).cgColor
         txtBudgetItems.layer.borderWidth = 1.0
@@ -62,11 +63,11 @@ class CalculateScreen: UIViewController, UIPickerViewDelegate, UIPickerViewDataS
     }
 
     func checkField(sender: AnyObject) {
-        if ((txtAddress.text?.isEmpty)! || (txtCityStateZIPCode.text?.isEmpty)! ||
-            (txtSquareFootage.text?.isEmpty)! || (txtBedrooms.text?.isEmpty)! ||
-            (txtBathrooms.text?.isEmpty)! || (txtSalePrice.text?.isEmpty)! ||
-            (txtFMVARV.text?.isEmpty)! || (txtBudgetItems.text?.isEmpty)!) {
-            if ((txtRehabBudgetFlatRate.isHidden == false) && (txtFMVARV.text?.isEmpty)!) {
+        if ((txtAddress.text == "") || (txtCityStateZIPCode.text == "") ||
+            (txtSquareFootage.text == "") || (txtBedrooms.text == "") ||
+            (txtBathrooms.text == "") || (txtSalePrice.text == "") ||
+            (txtFMVARV.text == "") || (txtBudgetItems.text == "")) {
+            if ((txtRehabBudgetFlatRate.isHidden == false) && (txtFMVARV.text == "")) {
                 btnSubmit.isEnabled = false
             }
         } else {
